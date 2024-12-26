@@ -19,9 +19,9 @@
 					<li><a href="#">Contact Us</a></li>
 				</ul>
 
-				<a class="d-inline-block btn_2 ms-3" href="tel:+91 8097044229">
-				<i class="fa-solid fa-phone"></i> +91 8097044229
-					
+				<a class="d-inline-block btn_2 ms-3 fontHeading" href="tel:+91 8097044229">
+					<i class="fa-solid fa-phone"></i> +91 8097044229
+
 				</a>
 
 			</div>
@@ -36,63 +36,55 @@
 
 
 <!-- popup  -->
-<div class="modal fade show" id="formEnquire" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
-	role="dialog">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header ">
-				<h3 class="modal-title fontHeading fontWeight700 
-					small_heading" id="exampleModalLabel"><span>We're Here to Help</span></h3>
-				<button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+			<div class="modal-header">
+				<h5 class="modal-title fontHeading text_primary" id="exampleModalLabel"> <span
+						class="fontWeight600">Enquire Now</span> <br /><span class="fs-6 text-dark">100% Free Career
+						Counseling</span></h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<form method="post" action="email.php">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="formItem mb-3">
-								<div class="form-floating">
-									<input type="hidden" name="hidden">
-									<input type="text" required="" class="form-control" id="name" name="name"
-										placeholder="name">
-									<label for="name">Name</label>
-								</div>
-							</div>
-							<div class="formItem mb-3">
-								<div class="form-floating">
-									<input type="tel" required="" class="form-control" id="phone" name="phone"
-										placeholder="phone">
-									<label for="phone">Phone</label>
-								</div>
-							</div>
-							<div class="formItem">
-								<div class="form-floating mb-3">
-									<input type="email" required="" class="form-control" id="email" name="email"
-										placeholder="email">
-									<label for="email">Email</label>
-								</div>
-							</div>
-						</div>
-					</div>
+				<form class="px-4">
 					<div class="formItem">
-						<button id="cpatchaSubmitBtn2" type="submit" name="submit"
-							class="btnTheme btnmodel border-0 w-100">Send
-							Request</button>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name">
+					</div>
+
+					<div class="formItem">
+						<label for="mobile">Mobile Number:</label>
+						<input type="tel" id="mobile" name="mobile">
+					</div>
+
+					<div class="formItem">
+						<label for="email">Email ID:</label>
+						<input type="email" id="email" name="email">
+					</div>
+
+					<div class="formItem">
+						<label for="course">Course Name:</label>
+						<input type="text" id="course" name="course">
+					</div>
+
+					<div class="formItem mt-3 pb-2">
+						<button class="btn_2 w-100" type="submit">Submit</button>
 					</div>
 				</form>
+
 			</div>
-			<div class="formfooter d-flex justify-content-between">
-				<div class="item_contact">
-					<a href="https://api.whatsapp.com/send?phone=amp;text=Hi"><i class="fab fa-whatsapp"></i>
-						&nbsp; WhatsApp</a>
-				</div>
-				<div class="item_contact">
-					<a href="tel:"><i class="fa fa-phone"></i> &nbsp; +91 929424344</a>
-				</div>
-			</div>
+			<!-- <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div> -->
 		</div>
 	</div>
 </div>
-
 
 
 
